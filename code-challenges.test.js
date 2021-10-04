@@ -71,6 +71,50 @@ console.log(colors2);//adding .shift here will only log what was shifted and it'
 // console.log(colors1); I found a cleaner code to shuffle but I didn't use it because I have to break it down a little more to
 // understand how to implement it here.
 
+// // // --------------------2) Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers
+// // // in that order.
+// //
+// // // a) Create a test with expect statements for each of the variables provided.
+// //
+describe("maxMinProp", () => {
+  test("whether function takes the highest and lowest numbers and log them in that order ", () => {
+    expect(nums1).toEqual(-8,90)
+    expect(nums1).toEqual(5,109)
+  })
+})
+// //
+// // var nums1 = [3, 56, 90, -8, 0, 23, 6]
+// // // Expected output: [-8, 90]
+// // var nums2 = [109, 5, 9, 67 8, 24]
+// // // Expected output: [5, 109]
+
+var nums1 = [3, 56, 90, -8, 0, 23, 6], nums2 = [109, 5, 9, 67 8, 24] // I keep getting syntax errors for index 4 inthe secondarray
+var maximum
+
+
+function newArr(value, len) {
+
+    var arr = [];
+    for (var i = 0; i < len; i++) {
+        arr.push(value);
+    }
+    return arr;
+}
+
+function maxMinProp(nums1, nums2, maximum) {
+    var answer = "";
+
+    for (var count = 1; count++; count < nums1.length) { // so this is my attempt at getting the output to be both numbers and in order.
+        if (newArr(nums1[count], num1.length) > nums1) // I couldn't wuite wrap my head around how exactly this works.
+            answer += nums1[count]
+        if (newArr(nums2[count], nums2.length) > nums2)
+            answer += nums2[count]
+    }
+    return answer
+}
+
+//---------------------------------------------------//
+console.log(maxMinProp(nums1, nums2 maximum))i // I tried to log it a few ways but still nothing came uip
 
 
 
