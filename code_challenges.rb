@@ -1,33 +1,70 @@
 # ASSESSMENT 4: Ruby Coding Practical Questions
 # MINASWAN
 
-# --------------------1) Create a method that takes in a number and determines if the number is even or odd. Use the test variables provided.
+# --------------------1) Create a method that takes in a number and determines if the number 
+# is even or odd. Use the test variables provided.
 
-num1 = 7
-# Expected output: '7 is odd'
-num2 = 42
-# Expected output: '42 is even'
-num3 = 221
-# Expected output: '221 is odd'
-
-
-
-# -------------------2) Create a method that takes in a string and removes all the vowels from the string. Use the test variables provided. HINT: Check out this resource: https://ruby-doc.org/core-2.6/String.html#method-i-delete
-
-album1 = 'Rubber Soul'
-# Expected output: 'Rbbr Sl'
-album2 = 'Sgt Pepper'
-# Expected output: 'Sgt Pppr'
-album3 = 'Abbey Road'
-# Expected output: 'bby Rd'
+# num1 = 7
+# # Expected output: '7 is odd'
+# num2 = 42
+# # Expected output: '42 is even'
+# num3 = 221
+# # Expected output: '221 is odd'
 
 
+  if num1.odd? == true
+    puts " #{num1} is very odd "
+  else
+    puts " #{num1} is steady even"
+  
+  end
+  
+  # output =  7 is very odd
+  
+  if num2.odd? == true
+    puts " #{num2} is pretty odd "
+  else
+    puts " #{num2} is adequately even"
 
-# -------------------3) Create a method that takes in a string and checks if the string is a palindrome. A palindrome is the same word spelled forwards or backwards. Use the test variables provided.
+  end
 
-is_palindrome1 = 'Racecar'
-# Expected output: 'Racecar is a palindrome'
-is_palindrome2 = 'LEARN'
-# Expected output: 'LEARN is not a palindrome'
-is_palindrome3 = 'Rotator'
-# Expected output: 'Rotator is a palindrome'
+  # output = 42 is adequately even
+  
+  if num3.odd? == true
+    puts " #{num3} is so odd "
+  else
+    puts " #{num3} is quite even"
+  
+  end
+# output = 221 is so odd
+
+
+
+# # -------------------2) Create a method that takes in a string and removes all the vowels from the string. Use the test variables provided. HINT: Check out this resource: https://ruby-doc.org/core-2.6/String.html#method-i-delete
+
+
+ album1 = 'Rubber Soul'
+# # # Expected output: 'Rbbr Sl'
+ album2 = 'Sgt Pepper'
+# # # Expected output: 'Sgt Pppr'
+ album3 = 'Abbey Road'
+# # # Expected output: 'bby Rd'
+#
+p album1.delete ("u" "o")
+p album2.delete ("e")
+p album3.delete ("a" "e" "o")
+
+# # -------------------3) Create a method that takes in a string and checks if the string is a palindrome. A palindrome is the same word spelled forwards or backwards. Use the test variables provided.
+
+  is_palindrome1 = 'Racecar'
+# # # Expected output: 'Racecar is a palindrome'
+#  is_palindrome2 = 'LEARN'
+# # # Expected output: 'LEARN is not a palindrome'
+#  is_palindrome3 = 'Rotator'
+# # # Expected output: 'Rotator is a palindrome'
+
+if Racecar.palindrome? == true
+  puts "#{is_palindrome1} is a palindrome"
+end
+
+# I've tried a couple of ways to nail this and I keep coming up empty. Is there no way of dong this with such a simple methid?
